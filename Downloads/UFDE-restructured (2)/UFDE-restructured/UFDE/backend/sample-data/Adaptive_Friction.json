@@ -1,0 +1,163 @@
+[
+  {
+    "recordId": "AF-01",
+    "transactionId": "TXN-2026-01",
+    "liveTransaction": {
+      "amount": 5426.68,
+      "currency": "SGD",
+      "deviceFingerprint": {
+        "os": "Android 13",
+        "browser": "Chrome 124.0",
+        "ipAddress": "203.0.113.156",
+        "userAgent": "Mozilla/5.0 (Linux; Android 13) Chrome/124.0"
+      },
+      "distanceKm": 2392.71
+    },
+    "storedProfile": {
+      "historicalAvgAmount": 6541.09,
+      "knownDeviceFingerprint": {
+        "os": "Android 13",
+        "browser": "Chrome 124.0",
+        "ipAddress": "203.0.113.156",
+        "userAgent": "Mozilla/5.0 (Linux; Android 13) Chrome/124.0"
+      }
+    }
+  },
+  {
+    "recordId": "AF-02",
+    "transactionId": "TXN-2026-02",
+    "liveTransaction": {
+      "amount": 2285.85,
+      "currency": "SGD",
+      "deviceFingerprint": {
+        "os": "Windows 10",
+        "browser": "Edge 125.0",
+        "ipAddress": "198.51.100.201",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Edge/125.0"
+      },
+      "distanceKm": 41.35
+    },
+    "storedProfile": {
+      "historicalAvgAmount": 1150.0,
+      "knownDeviceFingerprint": {
+        "os": "Android 13",
+        "browser": "Chrome 124.0",
+        "ipAddress": "203.0.113.156",
+        "userAgent": "Mozilla/5.0 (Linux; Android 13) Chrome/124.0"
+      }
+    }
+  },
+  {
+    "recordId": "AF-03",
+    "transactionId": "TXN-2026-03",
+    "liveTransaction": {
+      "amount": 1355.13,
+      "currency": "SGD",
+      "deviceFingerprint": {
+        "os": "Android 13",
+        "browser": "Chrome 124.0",
+        "ipAddress": "203.0.113.156",
+        "userAgent": "Mozilla/5.0 (Linux; Android 13) Chrome/124.0"
+      },
+      "distanceKm": 17.9
+    },
+    "storedProfile": {
+      "historicalAvgAmount": 1150.0,
+      "knownDeviceFingerprint": {
+        "os": "Android 13",
+        "browser": "Chrome 124.0",
+        "ipAddress": "203.0.113.156",
+        "userAgent": "Mozilla/5.0 (Linux; Android 13) Chrome/124.0"
+      }
+    }
+  },
+  {
+    "recordId": "AF-04",
+    "transactionId": "TXN-2026-04",
+    "liveTransaction": {
+      "amount": 4420.0,
+      "currency": "SGD"
+    },
+    "storedProfile": {
+      "historicalAvgAmount": 1700.0,
+      "knownDeviceFingerprint": {
+        "os": "Android 13",
+        "browser": "Chrome 124.0",
+        "ipAddress": "203.0.113.156",
+        "userAgent": "Mozilla/5.0 (Linux; Android 13) Chrome/124.0"
+      }
+    }
+  },
+  {
+    "recordId": "AF-05",
+    "transactionId": "TXN-2026-05",
+    "liveTransaction": {
+      "amount": 4845.25,
+      "currency": "SGD",
+      "deviceFingerprint": {
+        "os": "Windows 10",
+        "browser": "Edge 125.0",
+        "ipAddress": "198.51.100.201",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Edge/125.0"
+      },
+      "distanceKm": 1141.24
+    },
+    "storedProfile": {
+      "historicalAvgAmount": 2650.0,
+      "knownDeviceFingerprint": {
+        "os": "Android 13",
+        "browser": "Chrome 124.0",
+        "ipAddress": "203.0.113.156",
+        "userAgent": "Mozilla/5.0 (Linux; Android 13) Chrome/124.0"
+      }
+    }
+  },
+  {
+    "recordId": "AF-06",
+    "transactionId": "TXN-2026-06",
+    "liveTransaction": {
+      "amount": 1183.78,
+      "currency": "SGD",
+      "deviceFingerprint": {
+        "os": "Windows 10",
+        "browser": "Edge 125.0",
+        "ipAddress": "198.51.100.201",
+        "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Edge/125.0"
+      },
+      "distanceKm": 309.25
+    },
+    "storedProfile": {
+      "historicalAvgAmount": 1150.0,
+      "knownDeviceFingerprint": {
+        "os": "Android 13",
+        "browser": "Chrome 124.0",
+        "ipAddress": "203.0.113.156",
+        "userAgent": "Mozilla/5.0 (Linux; Android 13) Chrome/124.0"
+      }
+    }
+  },
+  {
+    "recordId": "AF-07",
+    "transactionId": "TXN-2026-07",
+    "liveTransaction": {
+      "amount": 1580.82,
+      "currency": "SGD",
+      "deviceFingerprint": {
+        "os": "Android 13",
+        "browser": "Chrome 124.0",
+        "ipAddress": "203.0.113.156",
+        "userAgent": "Mozilla/5.0 (Linux; Android 13) Chrome/124.0"
+      },
+      "distanceKm": 905.36
+    },
+    "storedProfile": {
+      "historicalAvgAmount": 1150.0,
+      "knownDeviceFingerprint": {
+        "os": "Android 13",
+        "browser": "Chrome 124.0",
+        "ipAddress": "203.0.113.156",
+        "userAgent": "Mozilla/5.0 (Linux; Android 13) Chrome/124.0"
+      }
+    }
+  }
+]

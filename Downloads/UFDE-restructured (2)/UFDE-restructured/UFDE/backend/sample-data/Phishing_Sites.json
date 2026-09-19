@@ -1,0 +1,102 @@
+[
+  {
+    "recordId": "PH-01",
+    "transactionId": "TXN-2026-01",
+    "submittedAt": "2026-07-15T10:00:00Z",
+    "domain": {
+      "registrationDate": "2026-01-17T10:00:00Z"
+    },
+    "certificate": {
+      "issuer": "self",
+      "selfSigned": true,
+      "validFrom": "2026-07-14T10:00:00Z",
+      "validTo": "2026-07-28T10:00:00Z"
+    },
+    "localListing": "whitelist"
+  },
+  {
+    "recordId": "PH-02",
+    "transactionId": "TXN-2026-02",
+    "submittedAt": "2026-07-15T10:07:00Z",
+    "domain": {
+      "registrationDate": "2026-05-02T10:07:00Z"
+    },
+    "certificate": {
+      "issuer": "self",
+      "selfSigned": true,
+      "validFrom": "2026-07-14T10:07:00Z",
+      "validTo": "2026-07-21T10:07:00Z"
+    },
+    "localListing": "none"
+  },
+  {
+    "recordId": "PH-03",
+    "transactionId": "TXN-2026-03",
+    "submittedAt": "2026-07-15T10:14:00Z",
+    "domain": {
+      "registrationDate": "2026-05-05T10:14:00Z"
+    },
+    "certificate": {
+      "issuer": "DigiCert Basic G3",
+      "selfSigned": false,
+      "validFrom": "2026-07-14T10:14:00Z",
+      "validTo": "2027-08-13T10:14:00Z"
+    },
+    "localListing": "whitelist"
+  },
+  {
+    "recordId": "PH-04",
+    "transactionId": "TXN-2026-04",
+    "submittedAt": "2026-07-15T10:21:00Z",
+    "domain": {
+      "registrationDate": null
+    },
+    "certificate": {},
+    "localListing": "none"
+  },
+  {
+    "recordId": "PH-05",
+    "transactionId": "TXN-2026-05",
+    "submittedAt": "2026-07-15T10:28:00Z",
+    "domain": {
+      "registrationDate": "2026-06-23T10:28:00Z"
+    },
+    "certificate": {
+      "issuer": "self",
+      "selfSigned": true,
+      "validFrom": "2026-07-14T10:28:00Z",
+      "validTo": "2026-08-04T10:28:00Z"
+    },
+    "localListing": "blacklist"
+  },
+  {
+    "recordId": "PH-06",
+    "transactionId": "TXN-2026-06",
+    "submittedAt": "2026-07-15T10:35:00Z",
+    "domain": {
+      "registrationDate": "2026-06-30T10:35:00Z"
+    },
+    "certificate": {
+      "issuer": "DigiCert Basic G3",
+      "selfSigned": false,
+      "validFrom": "2026-07-14T10:35:00Z",
+      "validTo": "2027-08-13T10:35:00Z"
+    },
+    "localListing": "blacklist"
+  },
+  {
+    "recordId": "PH-07",
+    "transactionId": "TXN-2026-07",
+    "submittedAt": "2026-07-15T10:42:00Z",
+    "domain": {
+      "registrationDate": "2026-03-26T10:42:00Z"
+    },
+    "certificate": {
+      "issuer": "DigiCert Basic G3",
+      "selfSigned": false,
+      "validFrom": "2026-07-14T10:42:00Z",
+      "validTo": "2027-08-13T10:42:00Z"
+    },
+    "localListing": "whitelist"
+  }
+]

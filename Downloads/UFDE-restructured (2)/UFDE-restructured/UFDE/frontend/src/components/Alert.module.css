@@ -1,0 +1,27 @@
+.alert {
+  margin: 12px 0 0;
+  padding: 9px 12px;
+  border-radius: var(--radius);
+  font-size: 13px;
+  border: 1px solid var(--border);
+  background: #f7faf8;
+  color: var(--text);
+}
+
+.error {
+  border-color: #f0c5c5;
+  background: #fdf3f3;
+  color: var(--danger);
+}
+
+.warning {
+  border-color: #f0dcb4;
+  background: #fdf8ee;
+  color: var(--warn);
+}
+
+.success {
+  border-color: #b9e3cd;
+  background: #f1faf5;
+  color: #14664a;
+}

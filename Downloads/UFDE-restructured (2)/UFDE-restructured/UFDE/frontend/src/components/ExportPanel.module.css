@@ -1,0 +1,56 @@
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+}
+
+.title {
+  margin: 0 0 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.body {
+  margin: 0 0 14px;
+  font-size: 13px;
+  color: var(--muted);
+  max-width: 46ch;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.primary,
+.secondary {
+  font: inherit;
+  font-size: 13px;
+  border-radius: var(--radius);
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.primary {
+  background: var(--green);
+  color: #ffffff;
+  border: none;
+}
+
+.primary:hover { background: #00764a; }
+
+.secondary {
+  background: #ffffff;
+  color: var(--dark);
+  border: 1px solid var(--border);
+}
+
+.secondary:hover { border-color: var(--green); }
+
+.primary:focus-visible,
+.secondary:focus-visible {
+  outline: 2px solid var(--dark);
+  outline-offset: 2px;
+}

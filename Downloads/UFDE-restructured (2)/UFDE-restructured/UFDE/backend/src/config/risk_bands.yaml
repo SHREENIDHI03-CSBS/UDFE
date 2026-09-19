@@ -1,0 +1,83 @@
+# UFDE Risk Band Configuration
+# Score range is inclusive on both ends: min <= score <= max
+# 'generatesSTR' controls whether a draft STR is auto-produced for the band.
+bands:
+  - key: VERY_LOW
+    label: "Very Low"
+    min: 0
+    max: 20
+    route: "none"
+    generatesSTR: false
+    actions:
+      - "No immediate action - transaction is considered normal."
+      - "Log the event for audit purposes only."
+      - "Continue routine monitoring (periodic batch scans)."
+
+  - key: LOW
+    label: "Low"
+    min: 21
+    max: 40
+    route: "viewer"
+    generatesSTR: false
+    actions:
+      - "Automated monitoring - flag the transaction for watch-list status."
+      - "Route to the Viewer role."
+      - "Add the transaction to the daily review queue; no hold or customer contact required unless additional signals appear."
+
+  - key: MEDIUM
+    label: "Medium"
+    min: 41
+    max: 60
+    route: "analyst"
+    generatesSTR: false
+    actions:
+      - "Analyst-level review - route the case to the Analyst role."
+      - "Display the full risk breakdown (score, sub-scores, triggered signals) on the dashboard."
+      - "Analyst decides: mark as false-positive (clear & log) OR place a temporary hold pending additional verification (OTP, phone call)."
+
+  - key: HIGH
+    label: "High"
+    min: 61
+    max: 80
+    route: "analyst"
+    generatesSTR: true
+    actions:
+      - "Immediate hold of the transaction."
+      - "Customer outreach - contact the account holder via phone/email to verify intent."
+      - "Analyst investigation - deep-dive into all evidence (device fingerprint, fund-flow, phishing-site verdict)."
+      - "Generate a draft STR (PDF/HTML) with populated regulatory fields, risk score, and plain-language explanations."
+      - "Escalate to the Admin role for final sign-off and filing with the regulator."
+
+  - key: CRITICAL
+    label: "Critical"
+    min: 81
+    max: 100
+    route: "admin"
+    generatesSTR: true
+    actions:
+      - "Automatic transaction freeze - block any further movement of funds."
+      - "Immediate escalation to senior fraud-prevention leadership and compliance officers (Admin role)."
+      - "Urgent customer verification - high-priority outreach (multiple contact channels, recorded call)."
+      - "Full STR generation - populate every mandatory field, embed all evidence (fund-flow snapshot, highlighted statement excerpts, phishing-site details)."
+
+# Signal-group weights used to build the consolidated score.
+# Consolidated Risk = groupWeights.AF * AF + groupWeights.FF * FF + groupWeights.PH * PH
+groupWeights:
+  AF: 0.45
+  FF: 0.35
+  PH: 0.20
+
+# Per-signal weights within each group (already sum to 100 -> group sub-score is 0-100)
+signalWeights:
+  AF:
+    AF1_deviceFingerprintDelta: 50
+    AF2_geoDistance: 30
+    AF3_amountVsHistoricMean: 20
+  FF:
+    FF1_balancedFlow: 45
+    FF2_nearZeroRetainedBalance: 30
+    FF3_shortHoldingTime: 25
+  PH:
+    PH1_domainAge: 40
+    PH2_certificateQuality: 30
+    PH3_blacklistHit: 30

@@ -1,0 +1,89 @@
+.card {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 91px;
+  padding: 12px 13px;
+  overflow: hidden;
+
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--green);
+  border-radius: 8px;
+
+  background: var(--surface);
+  box-shadow: 0 3px 14px rgba(10, 46, 31, 0.03);
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+
+  display: grid;
+  place-items: center;
+
+  flex: 0 0 auto;
+
+  border-radius: 50%;
+  background: #e4f8f0;
+  color: var(--green);
+}
+
+.icon svg {
+  width: 21px;
+  height: 21px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.content {
+  min-width: 0;
+}
+
+.value {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.label {
+  margin-top: 4px;
+  color: #33443b;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.subtext {
+  margin-top: 2px;
+  color: #84918b;
+  font-size: 9px;
+}
+
+.chevron {
+  margin-left: auto;
+  color: #718078;
+  font-size: 23px;
+}
+
+.warn {
+  border-left-color: #df9200;
+}
+
+.warn .icon {
+  background: #fff1dc;
+  color: #df9200;
+}
+
+.danger {
+  border-left-color: #e1262d;
+}
+
+.danger .icon {
+  background: #ffeaed;
+  color: #e1262d;
+}

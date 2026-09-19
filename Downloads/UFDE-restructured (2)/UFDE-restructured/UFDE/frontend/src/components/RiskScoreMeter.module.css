@@ -1,0 +1,28 @@
+.meter {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: #dfe6e2;
+  border: 1px solid #ccd6d0;
+}
+
+.green { background: var(--very-low); border-color: var(--very-low); }
+.amber { background: var(--medium); border-color: var(--medium); }
+.red { background: var(--critical); border-color: var(--critical); }
+
+.value {
+  margin-left: 6px;
+  font-variant-numeric: tabular-nums;
+  font-size: 13px;
+}
+
+.na {
+  color: var(--muted);
+  font-size: 12px;
+}

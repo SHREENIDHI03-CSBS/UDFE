@@ -1,0 +1,33 @@
+.wrap { overflow-x: auto; }
+.loading { margin: 0; color: var(--muted); font-size: 13px; }
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+}
+
+.th {
+  text-align: left;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.row { border-bottom: 1px solid var(--border); }
+.row:hover { background: #fafcfb; }
+
+.td {
+  padding: 9px 12px;
+  font-size: 13px;
+}
+
+.role {
+  background: #eef4f0;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 10px;
+  font-size: 12px;
+}

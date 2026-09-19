@@ -1,0 +1,259 @@
+.page {
+  max-width: var(--shell-max);
+  margin: 0 auto;
+  padding: 24px 24px 42px;
+
+  background:
+    radial-gradient(
+      circle at 88% 0%,
+      rgba(0, 145, 90, 0.07),
+      transparent 28%
+    );
+}
+
+/* --------------------------------------------------
+   PAGE HEADER
+-------------------------------------------------- */
+
+.head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 24px;
+
+  margin-bottom: 18px;
+}
+
+.title {
+  margin: 0 0 4px;
+
+  color: var(--text);
+
+  font-size: 23px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  max-width: 82ch;
+  margin: 0;
+
+  color: var(--muted);
+
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+.motto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 3px;
+
+  padding-top: 2px;
+
+  text-align: right;
+  white-space: nowrap;
+}
+
+.motto strong {
+  color: var(--dark);
+
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.motto span {
+  color: #8b9892;
+
+  font-size: 8px;
+}
+
+/* --------------------------------------------------
+   MAIN ADMINISTRATION PANEL
+-------------------------------------------------- */
+
+.panel {
+  overflow: hidden;
+
+  background: var(--surface);
+
+  border: 1px solid var(--border);
+  border-radius: 9px;
+
+  box-shadow:
+    0 3px 16px rgba(10, 46, 31, 0.035);
+}
+
+/* --------------------------------------------------
+   TABS
+-------------------------------------------------- */
+
+.tabHeader {
+  padding: 0 14px;
+
+  border-bottom: 1px solid var(--border);
+  background: #ffffff;
+}
+
+/*
+  Tabs.jsx controls the actual tab buttons.
+  This wrapper gives the tab bar the same
+  horizontal spacing as the reference design.
+*/
+
+.tabHeader :global(button) {
+  font-size: 11px;
+}
+
+.tabHeader :global(button:hover) {
+  background: #f5faf7;
+}
+
+/* --------------------------------------------------
+   TAB CONTENT
+-------------------------------------------------- */
+
+.tabContent {
+  padding: 10px 12px 14px;
+}
+
+/* Small heading above each active section */
+
+.activeSection {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 10px;
+  padding: 8px 10px;
+
+  border: 1px solid #e2ece7;
+  border-radius: 7px;
+
+  background:
+    linear-gradient(
+      90deg,
+      #f2fbf7,
+      #ffffff
+    );
+}
+
+.activeIcon {
+  width: 31px;
+  height: 31px;
+
+  display: grid;
+  place-items: center;
+
+  flex: 0 0 auto;
+
+  border-radius: 50%;
+
+  background: #e0f7ee;
+  color: #00915a;
+}
+
+.activeIcon svg {
+  width: 17px;
+  height: 17px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.activeText {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  min-width: 0;
+}
+
+.activeTitle {
+  color: var(--text);
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.activeDescription {
+  color: var(--muted);
+
+  font-size: 9px;
+  line-height: 1.4;
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  margin-top: 10px;
+
+  color: var(--muted);
+
+  font-size: 9px;
+}
+
+/* --------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------- */
+
+@media (max-width: 900px) {
+  .page {
+    padding: 20px 16px 36px;
+  }
+
+  .head {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .motto {
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .tabContent {
+    padding: 9px;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 16px 12px 30px;
+  }
+
+  .title {
+    font-size: 20px;
+  }
+
+  .subtitle {
+    font-size: 10px;
+  }
+
+  .motto {
+    display: none;
+  }
+
+  .activeSection {
+    align-items: flex-start;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+}

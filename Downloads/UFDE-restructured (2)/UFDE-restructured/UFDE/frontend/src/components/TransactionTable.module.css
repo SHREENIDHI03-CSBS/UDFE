@@ -1,0 +1,273 @@
+.wrap {
+  width: 100%;
+}
+
+.empty {
+  margin: 0;
+  padding: 28px 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
+
+.tableToolbar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 0 2px 8px;
+}
+
+.resultCount {
+  margin-right: auto;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.sortControl {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.sortControl select {
+  height: 32px;
+  min-width: 155px;
+  padding: 0 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: #fff;
+  color: var(--text);
+  font: inherit;
+  font-size: 10px;
+}
+
+.tableScroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+/* Only a small width increase */
+.table {
+  width: 105%;
+  min-width: 980px;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.th {
+  padding: 8px 9px;
+  background: #f1f5f3;
+  color: #52625a;
+  font-size: 9px;
+  font-weight: 700;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.th:first-child {
+  border-radius: 6px 0 0 6px;
+}
+
+.th:last-child {
+  border-radius: 0 6px 6px 0;
+}
+
+.row,
+.rowOpen {
+  transition: background 0.15s ease;
+}
+
+.row:hover {
+  background: #f8fbf9;
+}
+
+.rowOpen {
+  background: #f5faf7;
+}
+
+.td {
+  padding: 8px 9px;
+  border-bottom: 1px solid #edf1ee;
+  vertical-align: middle;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.td:first-child {
+  border-left: 2px solid var(--green);
+}
+
+.transactionCell {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.txnId {
+  color: #1b2c24;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+
+.date {
+  color: #89958f;
+  font-size: 8px;
+}
+
+.processed {
+  display: inline-flex;
+  align-items: center;
+  padding: 3px 8px;
+  border-radius: 999px;
+  background: #edf3f0;
+  color: #66766e;
+  font-size: 9px;
+}
+
+.rejected {
+  color: var(--danger);
+  font-size: 9px;
+}
+
+.none,
+.noActions {
+  color: #9ba69f;
+}
+
+/* PDF button only */
+.reportButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  min-width: 48px;
+  padding: 5px 8px;
+
+  border: 1px solid #d4eee3;
+  border-radius: 6px;
+
+  background: #eaf9f3;
+  color: #008a57;
+
+  font: inherit;
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+}
+
+.reportButton:hover {
+  background: #dcf6eb;
+  border-color: #8bd3bb;
+}
+
+.reportButton svg {
+  width: 12px;
+  height: 12px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Separate View Detail column */
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  min-height: 32px;
+  padding: 5px 9px;
+
+  border: 1px solid #d6e1db;
+  border-radius: 6px;
+
+  background: #fff;
+  color: #244238;
+
+  font: inherit;
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.secondary:hover {
+  border-color: var(--green);
+  background: #f8fcfa;
+}
+
+.secondary svg {
+  width: 12px;
+  height: 12px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* Action buttons remain in their own column */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  flex-wrap: wrap;
+  max-width: 320px;
+}
+
+.action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+
+  min-height: 32px;
+  padding: 5px 9px;
+
+  border: 1px solid #a9cfc0;
+  border-radius: 6px;
+
+  background: #fff;
+  color: #174d3a;
+
+  font: inherit;
+  font-size: 9px;
+  font-weight: 600;
+
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.action:hover:not(:disabled) {
+  background: #f0faf6;
+  border-color: var(--green);
+}
+
+.action:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.action svg {
+  width: 12px;
+  height: 12px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.detailCell {
+  padding: 0 0 10px;
+  border-bottom: 1px solid #edf1ee;
+  border-left: 2px solid var(--green);
+}

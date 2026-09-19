@@ -1,0 +1,19 @@
+.pill {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #ffffff;
+  white-space: nowrap;
+}
+
+.none {
+  color: var(--muted);
+}
+
+.VERY_LOW { background: var(--very-low); }
+.LOW { background: var(--low); }
+.MEDIUM { background: var(--medium); color: #2b2100; }
+.HIGH { background: var(--high); }
+.CRITICAL { background: var(--critical); }

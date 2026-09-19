@@ -1,0 +1,579 @@
+.page {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 30px 20px;
+
+  box-sizing: border-box;
+
+  background:
+    radial-gradient(
+      circle at 10% 20%,
+      rgba(35, 170, 120, 0.28),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 90% 80%,
+      rgba(0, 110, 80, 0.3),
+      transparent 32%
+    ),
+    linear-gradient(
+      135deg,
+      #06392d 0%,
+      #07523d 48%,
+      #04372c 100%
+    );
+}
+
+/* Background decoration */
+
+.backgroundShapeOne,
+.backgroundShapeTwo {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.backgroundShapeOne {
+  width: 460px;
+  height: 460px;
+
+  left: -300px;
+  top: -100px;
+
+  border: 1px solid rgba(120, 255, 205, 0.13);
+
+  box-shadow:
+    0 0 0 55px rgba(100, 255, 200, 0.025),
+    0 0 0 110px rgba(100, 255, 200, 0.018);
+}
+
+.backgroundShapeTwo {
+  width: 520px;
+  height: 520px;
+
+  right: -320px;
+  bottom: -240px;
+
+  border: 1px solid rgba(120, 255, 205, 0.12);
+
+  box-shadow:
+    0 0 0 60px rgba(100, 255, 200, 0.025),
+    0 0 0 120px rgba(100, 255, 200, 0.018);
+}
+
+/* Main login card */
+
+.loginCard {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 480px;
+
+  padding: 30px 38px 28px;
+
+  background: #ffffff;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.25),
+    0 6px 20px rgba(0, 0, 0, 0.12);
+
+  box-sizing: border-box;
+}
+
+/* UFDE logo */
+
+.logoSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-bottom: 22px;
+}
+
+.logoIcon {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #079b6b;
+
+  margin-bottom: 5px;
+}
+
+.logoIcon svg {
+  width: 45px;
+  height: 45px;
+}
+
+.logo {
+  margin: 0;
+
+  color: #073b32;
+
+  font-size: 34px;
+  line-height: 1;
+
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+.logoLine {
+  width: 60px;
+  height: 3px;
+
+  margin-top: 11px;
+
+  border-radius: 10px;
+
+  background: #079b6b;
+}
+
+/* Form */
+
+.form {
+  width: 100%;
+}
+
+/* Field */
+
+.field {
+  margin-bottom: 15px;
+}
+
+.field label {
+  display: block;
+
+  margin-bottom: 6px;
+
+  color: #173f38;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Input wrapper */
+
+.inputWrapper {
+  position: relative;
+
+  width: 100%;
+}
+
+/* Input icons */
+
+.inputIcon {
+  position: absolute;
+
+  left: 15px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 20px;
+  height: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #71827e;
+
+  pointer-events: none;
+}
+
+.inputIcon svg {
+  width: 19px;
+  height: 19px;
+}
+
+/* Inputs */
+
+.inputWrapper input,
+.select {
+  width: 100%;
+  height: 48px;
+
+  padding: 0 44px;
+
+  border: 1px solid #d4dfdc;
+  border-radius: 9px;
+
+  background: #ffffff;
+
+  color: #173f38;
+
+  font-family: inherit;
+  font-size: 15px;
+
+  outline: none;
+
+  box-sizing: border-box;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.inputWrapper input::placeholder {
+  color: #9aa9a6;
+}
+
+.inputWrapper input:focus,
+.select:focus {
+  border-color: #079b6b;
+
+  box-shadow:
+    0 0 0 3px rgba(7, 155, 107, 0.11);
+}
+
+/* Select */
+
+.select {
+  padding-left: 44px;
+
+  cursor: pointer;
+
+  appearance: auto;
+}
+
+/* Password visibility */
+
+.passwordToggle {
+  position: absolute;
+
+  right: 13px;
+  top: 50%;
+
+  transform: translateY(-50%);
+
+  width: 28px;
+  height: 28px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  background: transparent;
+
+  color: #70827f;
+
+  font-size: 18px;
+
+  cursor: pointer;
+
+  padding: 0;
+}
+
+.passwordToggle:hover {
+  color: #079b6b;
+}
+
+/* Remember / Forgot */
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 5px 0 20px;
+
+  font-size: 13px;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #526966;
+
+  cursor: pointer;
+}
+
+.remember input {
+  width: 16px;
+  height: 16px;
+
+  margin: 0;
+
+  accent-color: #079b6b;
+
+  cursor: pointer;
+}
+
+.forgot {
+  border: none;
+  background: transparent;
+
+  color: #078e64;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  padding: 0;
+}
+
+.forgot:hover {
+  text-decoration: underline;
+}
+
+/* Error */
+
+.error {
+  margin-bottom: 15px;
+
+  padding: 10px 12px;
+
+  border: 1px solid #f0c7c7;
+  border-radius: 8px;
+
+  background: #fff2f2;
+
+  color: #b42318;
+
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Sign in button */
+
+.signInButton {
+  width: 100%;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 10px;
+
+  border: none;
+  border-radius: 9px;
+
+  background: linear-gradient(
+    135deg,
+    #079b6b,
+    #05b982
+  );
+
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 6px 16px rgba(7, 155, 107, 0.2);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    opacity 0.2s ease;
+}
+
+.signInButton:hover:not(:disabled) {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 9px 20px rgba(7, 155, 107, 0.26);
+}
+
+.signInButton:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.signInButton:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.arrow {
+  font-size: 20px;
+  line-height: 1;
+}
+
+/* Loading spinner */
+
+.spinner {
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-top-color: #ffffff;
+
+  border-radius: 50%;
+
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Security section */
+
+.security {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  margin-top: 22px;
+}
+
+.securityLine {
+  flex: 1;
+
+  height: 1px;
+
+  background: #e1e8e5;
+}
+
+.securityIcon {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #079b6b;
+}
+
+.securityIcon svg {
+  width: 23px;
+  height: 23px;
+}
+
+.securityText {
+  margin: 6px 0 0;
+
+  text-align: center;
+
+  color: #71817e;
+
+  font-size: 12px;
+}
+
+/* Footer */
+
+.footer {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 18px;
+
+  color: rgba(255, 255, 255, 0.72);
+
+  font-size: 12px;
+}
+
+/* Tablet */
+
+@media (max-width: 700px) {
+  .page {
+    padding: 25px 16px;
+  }
+
+  .loginCard {
+    max-width: 460px;
+
+    padding: 28px 32px 26px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 520px) {
+  .page {
+    min-height: 100vh;
+
+    padding: 20px 14px;
+  }
+
+  .loginCard {
+    width: 100%;
+
+    padding: 27px 22px 25px;
+
+    border-radius: 14px;
+  }
+
+  .logoIcon {
+    width: 43px;
+    height: 43px;
+  }
+
+  .logoIcon svg {
+    width: 41px;
+    height: 41px;
+  }
+
+  .logo {
+    font-size: 31px;
+  }
+
+  .logoLine {
+    width: 54px;
+    height: 3px;
+
+    margin-top: 9px;
+  }
+
+  .logoSection {
+    margin-bottom: 20px;
+  }
+
+  .options {
+    font-size: 12px;
+  }
+
+  .forgot {
+    font-size: 12px;
+  }
+}
+
+/* Small mobile */
+
+@media (max-width: 380px) {
+  .loginCard {
+    padding: 24px 18px;
+  }
+
+  .inputWrapper input,
+  .select,
+  .signInButton {
+    height: 46px;
+  }
+
+  .field {
+    margin-bottom: 13px;
+  }
+
+  .field label {
+    font-size: 13px;
+  }
+}
